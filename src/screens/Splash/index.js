@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { ImageBackground, StatusBar, View } from 'react-native'
+import { ImageBackground, StatusBar, View, Text, ActivityIndicator } from 'react-native'
 import { IMAGES } from '../../common';
 import { navigateToHome } from '../../navigation/Navigator';
 import styles from './styles';
@@ -26,6 +26,7 @@ const Splash = ({ navigation }) => {
         <ImageBackground source={IMAGES.splash} resizeMode='contain' style={styles.container} >
             <StatusBar backgroundColor={'#111'} />
             <Text style={styles.logoText}>STICKY NOTES</Text>
+            <ActivityIndicator/>
         </ImageBackground>
     )
 }

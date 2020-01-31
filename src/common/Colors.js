@@ -4,6 +4,7 @@ export const COLORS={
     third:'#fff',
     background:'#fafafa',
     text:'#000',
+    text2:'#A3A3A3',
     delete:'#FE2E2E',
     
     // option 4 

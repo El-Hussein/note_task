@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import { DEVICE_WIDTH } from '../../common';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     },
     logoText: {
         color: '#fff',
-        fontSize:60,
+        fontSize:DEVICE_WIDTH*0.08,
     },
     note:{
         color:'#fff',

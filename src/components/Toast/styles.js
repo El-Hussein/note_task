@@ -56,6 +56,17 @@ const styles = StyleSheet.create({
         borderRadius:width*0.02,
         marginTop:width*0.02,
         paddingHorizontal:width*0.04
+    },
+    emptyComonent:{
+        justifyContent:'center',
+        alignSelf:'center',
+        height:height*0.15
+    },
+    emptyComonentText:{
+        fontSize:width*0.04,
+        textAlign:'center',
+        textAlignVertical:'center',
+        color: COLORS.text2,
     }
 })
 

@@ -102,6 +102,12 @@ const Home = ({ navigation, FetchNotes, notes, EditNoteAction}) => {
           data={filterNotes}
           keyExtractor={(item, index) => `item--${index}${item}`}
           renderItem={renderItem}
+          ListEmptyComponent={(
+            <View style={styles.emptyComonent}>
+              <Text style={styles.emptyComonentText}>You Don't have any notes till NOW!!</Text>
+              <Text style={styles.emptyComonentText}>Go Add Some!</Text>
+            </View>
+          )}
           ListHeaderComponent={(
             <TextInput
               placeholder='search here..'
