@@ -65,7 +65,6 @@ const _AddNote = ({ close, type, note, AddNoteAction, EditNoteAction }) => {
                     <View style={styles.actions}>
                         <TouchableOpacity onPress={()=>setNoteData({...noteData, color:COLORS.green})} style={[styles.colorButton, {backgroundColor:COLORS.green}, noteData.color==COLORS.green?{borderColor:COLORS.main}:null]} />
                         <TouchableOpacity onPress={()=>setNoteData({...noteData, color:COLORS.pink})} style={[styles.colorButton, {backgroundColor:COLORS.pink}, noteData.color==COLORS.pink?{borderColor:COLORS.main}:null]} />
-                        <TouchableOpacity onPress={()=>setNoteData({...noteData, color:COLORS.white})} style={[styles.colorButton, {backgroundColor:COLORS.white}, noteData.color==COLORS.white?{borderColor:COLORS.main}:null]} />
                         <TouchableOpacity onPress={()=>setNoteData({...noteData, color:COLORS.orange})} style={[styles.colorButton, {backgroundColor:COLORS.orange}, noteData.color==COLORS.orange?{borderColor:COLORS.main}:null]} />
                         <TouchableOpacity onPress={()=>setNoteData({...noteData, color:COLORS.blue})} style={[styles.colorButton, {backgroundColor:COLORS.blue}, noteData.color==COLORS.blue?{borderColor:COLORS.main}:null]} />
                     </View>

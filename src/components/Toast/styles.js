@@ -44,10 +44,8 @@ const styles = StyleSheet.create({
         borderColor:'#FFF'
     },
     date:{
-        width:width*0.3,
-        // textAlign:'left',
+        width:width*0.4,
         fontSize:width*0.035,
-
     },
     search:{
         marginHorizontal:width*0.02,

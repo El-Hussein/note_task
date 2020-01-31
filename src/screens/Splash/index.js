@@ -25,6 +25,7 @@ const Splash = ({ navigation }) => {
     return (
         <ImageBackground source={IMAGES.splash} resizeMode='contain' style={styles.container} >
             <StatusBar backgroundColor={'#111'} />
+            <Text style={styles.logoText}>STICKY NOTES</Text>
         </ImageBackground>
     )
 }

@@ -38,7 +38,8 @@ const Home = ({ navigation, FetchNotes, notes, EditNoteAction}) => {
   useEffect(() => {
     // if we have real APIs we should call it..
     // FetchNotes()
-  }, [])
+    setFilterNotes(notes)
+  }, [notes])
 
   const renderItem = ({item})=>{
     return(
@@ -52,7 +53,6 @@ const Home = ({ navigation, FetchNotes, notes, EditNoteAction}) => {
           </Text>
           <TouchableOpacity disabled={item.color==COLORS.green} onPress={()=>EditNoteAction({...item, color:COLORS.green})} style={[styles.colorButton, {backgroundColor:COLORS.green}, item.color==COLORS.green?{borderColor:COLORS.main}:null]} />
           <TouchableOpacity disabled={item.color==COLORS.pink} onPress={()=>EditNoteAction({...item, color:COLORS.pink})} style={[styles.colorButton, {backgroundColor:COLORS.pink}, item.color==COLORS.pink?{borderColor:COLORS.main}:null]} />
-          <TouchableOpacity disabled={item.color==COLORS.white} onPress={()=>EditNoteAction({...item, color:COLORS.white})} style={[styles.colorButton, {backgroundColor:COLORS.white}, item.color==COLORS.white?{borderColor:COLORS.main}:null]} />
           <TouchableOpacity disabled={item.color==COLORS.orange} onPress={()=>EditNoteAction({...item, color:COLORS.orange})} style={[styles.colorButton, {backgroundColor:COLORS.orange}, item.color==COLORS.orange?{borderColor:COLORS.main}:null]} />
           <TouchableOpacity disabled={item.color==COLORS.blue} onPress={()=>EditNoteAction({...item, color:COLORS.blue})} style={[styles.colorButton, {backgroundColor:COLORS.blue}, item.color==COLORS.blue?{borderColor:COLORS.main}:null]} />
           <AppIcon onPress={()=>{setSelectedNote(item);setType('edit'); setAddNoteVisible(true)}} name='pencil' size={DEVICE_WIDTH*0.05} color={COLORS.main}/>

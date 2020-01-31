@@ -3,7 +3,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         zIndex:1,
-        backgroundColor:'#FFF'
+        backgroundColor:'#FFF',
+        justifyContent:'center',
+        alignItems:'center'
     },
     logoView: {
         flex: 1,
@@ -20,7 +22,7 @@ const styles = StyleSheet.create({
     note:{
         color:'#fff',
         paddingHorizontal:15
-    }
+    },
 })
 
 export default styles;
